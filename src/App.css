@@ -1,0 +1,30 @@
+@font-face {
+    src: url("./assets/fonts/Aquire.otf");
+    font-family: "Primary";
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    src: url("./assets/fonts/AzeretMono.otf");
+    font-family: "Secondary";
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    src: url("./assets/fonts/Satoshi.otf");
+    font-family: "Typo";
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  .nav-bar {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 2000;
+    position: absolute;
+  }
