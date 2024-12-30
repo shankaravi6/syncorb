@@ -37,9 +37,9 @@ const CoreSection = () => {
               <TempButton p="10px 25px" variant="outline">
                 Who we are
               </TempButton>
-              <TempLinearText fs="clamp(2rem, 10vw, 3.5rem)" ta="left">
-                Core Values
-              </TempLinearText>
+              <TempSubTitle fs="clamp(2rem, 10vw, 3.5rem)" ta="left">
+                CORE VALUES
+              </TempSubTitle>
             </Fade>
             <Fade direction="up">
               <TempTypography>

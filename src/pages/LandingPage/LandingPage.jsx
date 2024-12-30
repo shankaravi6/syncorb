@@ -6,6 +6,7 @@ import BannerSection from "../BannerSection/BannerSection";
 import WelcomeSection from "../WelcomeSection/WelcomeSection";
 import CoreSection from "../CoreSection/CoreSection";
 import ServciceSection from "../ServiceSection/ServiceSection";
+import ClientSection from "../ClientSection/ClientSection";
 
 const LandingPage = () => {
   return (
@@ -15,6 +16,7 @@ const LandingPage = () => {
       <WelcomeSection/> 
       <CoreSection/> 
       <ServciceSection/>
+      <ClientSection/>
       <FooterBar/>
     </TempContainer>
   );

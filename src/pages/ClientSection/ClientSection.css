@@ -1,0 +1,11 @@
+.logo-gray {
+    filter: grayscale(50%);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.logo-gray:hover {
+    filter: grayscale(5%);
+    transition: all .5s ease-in-out;
+}

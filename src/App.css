@@ -1,19 +1,19 @@
 @font-face {
-    src: url("./assets/fonts/Aquire.otf");
+    src: url("/assets/fonts/Aquire.otf");
     font-family: "Primary";
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
-    src: url("./assets/fonts/AzeretMono.otf");
+    src: url("/assets/fonts/AzeretMono.otf");
     font-family: "Secondary";
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
-    src: url("./assets/fonts/Satoshi.otf");
+    src: url("/assets/fonts/Satoshi.otf");
     font-family: "Typo";
     font-weight: normal;
     font-style: normal;

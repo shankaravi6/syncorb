@@ -9,10 +9,12 @@ import {
   TempImg,
   TempLinearText,
   TempSection,
+  TempSubTitle,
   TempTypography,
 } from "../../components/styled_components/globalStyles";
 import "./WelcomeSection.css";
 import WelcomeImg from "../../../public/assets/images/welcome.png";
+import { colorTokens } from "../../context/theme/themeConfig";
 
 const WelcomeSection = () => {
   return (
@@ -38,9 +40,9 @@ const WelcomeSection = () => {
                 mp="0rem 1rem"
                 className="flex flex-col justify-center items-center gap-5"
               >
-                <TempLinearText ta="center" fs="clamp(1.5rem, 10vw, 3.5rem)">
-                  Welcome to our company
-                </TempLinearText>
+                <TempSubTitle color={colorTokens.drops[300]} ta="center" fs="clamp(1.5rem, 10vw, 3.5rem)">
+                  WELCOME TO OUR COMPANY
+                </TempSubTitle>
                 <TempTypography fs="clamp(.5rem, 5vw, 1.5rem)">
                   At SYNCORB, we specialize in delivering innovative,
                   cutting-edge solutions to address technological flaws across

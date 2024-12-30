@@ -32,7 +32,7 @@ const TopArrow = (props) => (
       zIndex: 10,
       cursor: 'pointer',
       fontSize: '30px',
-      color: '#fff',
+      color: '#aeadab',
     }}
     onClick={props.onClick}
   >
@@ -51,7 +51,7 @@ const BottomArrow = (props) => (
       zIndex: 10,
       cursor: 'pointer',
       fontSize: '30px',
-      color: '#fff',
+      color: '#aeadab',
     }}
     onClick={props.onClick}
   >
@@ -80,14 +80,14 @@ const ServciceSection = () => {
       <Fade duration='1500'>
         <TempFlex gap="clamp(2rem, 5vw, 10rem)">
           <TempBox w="auto" className="flex flex-col gap-5" mp='clamp(2rem, 5vw, 0rem)'>
-            <TempSubTitle>OUR SERVICES</TempSubTitle>
+            <TempSubTitle fs='clamp(2rem, 10vw, 3.5rem)'>OUR SERVICES</TempSubTitle>
             <TempCard w="450px" h="450px" p="2rem">
               <TempImg src={ServiceImg} br="15px" />
             </TempCard>
           </TempBox>
 
           <TempBox  w="100%" h="500px" sh='800px'>
-            <TempFlex gap="2rem" dir="column" p='clamp(2rem, 5vw, 5rem)'>
+            <TempFlex gap="2rem" dir="column" p='clamp(2rem, 5vw, 0rem)'>
               <TempBox>
                 <TempFlex al="left" dir="column" gap="clamp(1.5rem, 5vw, 2rem)">
                   <Slider {...settings}>
