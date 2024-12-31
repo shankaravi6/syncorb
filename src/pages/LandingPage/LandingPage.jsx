@@ -13,8 +13,7 @@ import WhoWeSection from "../WhoWeSection/WhoWeSection";
 
 const LandingPage = () => {
   return (
-    <TempContainer>
-    {/* back='repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0px, rgba(255, 255, 255, 0.05) 0.85px, transparent 0.85px, transparent 25px), repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.05) 0px, rgba(255, 255, 255, 0.05) 0.85px, transparent 0.85px, transparent 25px);' */}
+    <TempContainer back='repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.0175) 0px, rgba(255, 255, 255, 0.0175) 0.85px, transparent 0.85px, transparent 25px), repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.0175) 0px, rgba(255, 255, 255, 0.0175) 0.85px, transparent 0.85px, transparent 25px);'>
       <NavBar />
       <BannerSection/>
       <WelcomeSection/> 
