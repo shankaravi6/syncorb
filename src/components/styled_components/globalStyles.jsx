@@ -28,8 +28,10 @@ export const TempBackground = styled.div`
 
 export const TempContainer = TempComponent(styled.div`
   width: 100%;
-  background: ${(props) =>
+  background: ${(props) => props.back ? props.back : 'unset'};
+  background-color: ${(props) =>
     props.bg ? props.bg : props.$palette.background.high};
+  color:#f2f2f2;
   @media screen and (max-width: 768px) {
     max-width: 1300px;
   }

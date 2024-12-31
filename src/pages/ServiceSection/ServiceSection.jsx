@@ -26,7 +26,7 @@ const TopArrow = (props) => (
     className="slick-arrow top-arrow"
     style={{
       position: 'absolute',
-      top: '-20px', // Adjusted to move it a little lower
+      top: '-50px', // Adjusted to move it a little lower
       left: '50%',
       transform: 'translateX(-50%)',
       zIndex: 10,
@@ -45,7 +45,7 @@ const BottomArrow = (props) => (
     className="slick-arrow bottom-arrow"
     style={{
       position: 'absolute',
-      bottom: '-50px', // Adjusted to move it a little higher
+      bottom: '-30px', // Adjusted to move it a little higher
       left: '50%',
       transform: 'translateX(-50%)',
       zIndex: 10,
@@ -87,7 +87,7 @@ const ServciceSection = () => {
           </TempBox>
 
           <TempBox  w="100%" h="500px" sh='800px'>
-            <TempFlex gap="2rem" dir="column" p='clamp(2rem, 5vw, 0rem)'>
+            <TempFlex gap="2rem" dir="column" m='3.5rem 0 0 0' p='clamp(2rem, 5vw, 0rem)'>
               <TempBox>
                 <TempFlex al="left" dir="column" gap="clamp(1.5rem, 5vw, 2rem)">
                   <Slider {...settings}>
@@ -95,7 +95,7 @@ const ServciceSection = () => {
                       return (
                         <TempCard
                           br="10px"
-                          bg="linear-gradient(175deg, #000000, #4141417a)"
+                          bg="linear-gradient(175deg, #03040a, #4141417a)"
                           p="1.5rem"
                           sw='clamp(300px, 90vw, 800px) !important'
                           h="auto"

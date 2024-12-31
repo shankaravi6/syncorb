@@ -5,7 +5,7 @@ export const TempFooterSection = styled.div`
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: 25px;
+  padding: 50px;
   background-color: transparent;
   color: white;
   text-align: center;

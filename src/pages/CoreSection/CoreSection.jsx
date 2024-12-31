@@ -24,7 +24,7 @@ const CoreSection = () => {
   const { isSmallScreen, isMediumScreen, isLargeScreen } = useResponsiveLayout();
   return (
     <TempSection>
-      <Fade duration='1500'>
+      <Fade duration='2000'>
         <TempFlex
           gap="clamp(5rem, 5vw, 7.5rem)"
           p='clamp(1rem, 5vw, 3.125rem) clamp(2rem, 6vw, 0rem)'

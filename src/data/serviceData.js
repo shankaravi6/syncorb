@@ -32,7 +32,7 @@ export const serviceData = [
     {
       id: 7,
       title: 'Personal Branding & Content Management:',
-      text: 'Providing branding solutions and dynamic content solutions for mid-level companies.'
+      text: 'Providing branding and dynamic content for mid-level companies.'
     }
   ];
   

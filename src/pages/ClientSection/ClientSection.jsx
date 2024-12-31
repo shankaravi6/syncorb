@@ -14,7 +14,7 @@ import './ClientSection.css'
 
 const ClientSection = () => {
   return (
-    <TempSection>
+    <TempSection p='5rem 0'>
       <TempFlex>
         <TempSubTitle fs='clamp(2rem, 5vw, 5rem)'>
             OUR CLIENTS

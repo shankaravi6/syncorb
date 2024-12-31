@@ -14,15 +14,13 @@ const FooterBar = () => {
         <TempFlex w="100%" jc="space-between">
           <TempFlex sw="100%" w="500px">
             <TempTypography fs="14px" ls="0px">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit, quis
-              pellentesque leo netus torquent vel, est nisi tempor ac ad
-              himenaeos.
+            At Syncorb, we exceed customer expectations with end-to-end solutions for design, development, and data analytics.
             </TempTypography>
           </TempFlex>
           <TempFlex dir="column" al="flex-start">
-            <TempTypography fs="14px">UNISERSAL SUBJET</TempTypography>
+            <TempTypography fs="14px">All rights reserved by</TempTypography>
             <TempSubTitle fst="normal" fs="14px">
-              REFINE @2024
+              SYNCORB @2024
             </TempSubTitle>
           </TempFlex>
         </TempFlex>
