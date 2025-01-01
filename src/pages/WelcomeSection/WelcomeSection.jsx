@@ -23,7 +23,7 @@ const WelcomeSection = () => {
         p="5rem"
         gap="clamp(0.5rem, 10vw, 2.5rem)"
         dir="column"
-        h="100vh"
+        h="unset"
       >
         <Fade duration="1000">
           <TempCover

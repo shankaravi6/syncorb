@@ -28,9 +28,7 @@ const CoreSection = () => {
         <TempFlex
           gap="clamp(5rem, 5vw, 7.5rem)"
           p='clamp(1rem, 5vw, 3.125rem) clamp(2rem, 6vw, 0rem)'
-          style={{
-            minHeight: "100vh",
-          }}
+          
         >
           <TempBox w="100%" className="flex-col gap-5">
             <Fade direction="up">
