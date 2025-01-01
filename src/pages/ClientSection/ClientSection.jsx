@@ -20,29 +20,29 @@ const ClientSection = () => {
             OUR CLIENTS
         </TempSubTitle>
       </TempFlex>
-      <TempFlex className='flex-wrap' p='4rem 0 0 0' gap='clamp(2rem, 5vw, 5rem)'>
-            <TempBox className='logo-gray' w='15%' h='15%'>
+      <TempFlex className='flex-wrap' p='4rem 0 0 0' gap='clamp(3.5rem, 5vw, 5rem)'>
+            <TempBox className='logo-gray' w='15%' h='15%' sw='50%' sh='50%'>
                 <TempImg src={Logo1} />
             </TempBox>
-            <TempBox className='logo-gray' w='10%' h='10%'>
+            <TempBox className='logo-gray' w='10%' h='10%' sw='25%' sh='50%'>
                 <TempImg src={Logo3} />
             </TempBox>
-            <TempBox className='logo-gray' w='15%' h='15%'>
+            <TempBox className='logo-gray' w='15%' h='15%' sw='50%' sh='50%'>
                 <TempImg src={Logo2} />
             </TempBox>
-            <TempBox className='logo-gray' w='10%' h='10%'>
+            <TempBox className='logo-gray' w='10%' h='10%' sw='25%' sh='50%'>
                 <TempImg src={Logo4} />
             </TempBox>
-            <TempBox className='logo-gray' w='15%' h='15%'>
+            <TempBox className='logo-gray' w='15%' h='15%' sw='50%' sh='50%'>
                 <TempImg src={Logo5} />
             </TempBox>
-            <TempBox className='logo-gray' w='15%' h='15%'>
+            <TempBox className='logo-gray' w='15%' h='15%' sw='50%' sh='50%'>
                 <TempImg src={Logo6} />
             </TempBox>
-            <TempBox className='logo-gray' w='15%' h='15%'>
+            <TempBox className='logo-gray' w='15%' h='15%' sw='50%' sh='50%'>
                 <TempImg src={Logo7} />
             </TempBox>
-            <TempBox className='logo-gray' w='15%' h='15%'>
+            <TempBox className='logo-gray' w='15%' h='15%' sw='50%' sh='50%'>
                 <TempImg src={Logo8} />
             </TempBox>
         </TempFlex>

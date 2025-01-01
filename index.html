@@ -1,13 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Syncorb</title>
+    <!-- <style>
+      .circle {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.088);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+        pointer-events: none;
+        opacity: 0;
+        transform: scale(0.5);
+        transition: opacity 0.2s, transform 0.2s;
+      }
+    </style> -->
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <!-- <script>
+      const body = document.body;
+
+      // Create the circle element
+      const circle = document.createElement("div");
+      circle.classList.add("circle");
+      body.appendChild(circle);
+
+      // Update circle position and visibility on mousemove
+      body.addEventListener("mousemove", (e) => {
+        circle.style.left = `${e.pageX}px`;
+        circle.style.top = `${e.pageY}px`;
+        circle.style.opacity = "1";
+        circle.style.transform = "scale(1)";
+      });
+
+      // Fade the circle out when the mouse leaves the body
+      body.addEventListener("mouseleave", () => {
+        circle.style.opacity = "0";
+        circle.style.transform = "scale(0.5)";
+      });
+    </script> -->
   </body>
 </html>

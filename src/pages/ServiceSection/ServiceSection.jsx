@@ -78,11 +78,11 @@ const ServciceSection = () => {
   return (
     <TempSection p="0 0 5rem 0">
       <Fade duration='1500'>
-        <TempFlex gap="clamp(2rem, 5vw, 10rem)">
+        <TempFlex gap="clamp(0rem, 5vw, 15rem)">
           <TempBox w="auto" className="flex flex-col gap-5" mp='clamp(2rem, 5vw, 0rem)'>
             <TempSubTitle fs='clamp(2rem, 10vw, 3.5rem)'>OUR SERVICES</TempSubTitle>
-            <TempCard w="450px" h="450px" p="2rem">
-              <TempImg src={ServiceImg} br="15px" />
+            <TempCard br='0.5rem' w="450px" h="450px" p="2rem">
+              <TempImg src={ServiceImg} br="0.25rem" />
             </TempCard>
           </TempBox>
 

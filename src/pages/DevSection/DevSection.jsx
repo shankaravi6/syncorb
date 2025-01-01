@@ -12,12 +12,32 @@ import {
 } from "../../components/styled_components/globalStyles";
 import DevImg from "../../../public/assets/images/devimgback.jpeg";
 import { Fade } from "react-awesome-reveal";
+import useResponsiveLayout from "../../hooks/useResponsiveLayout";
+
 
 const DevSection = () => {
+  const { isSmallScreen, isMediumScreen, isLargeScreen } = useResponsiveLayout();
+
   return (
     <TempSection>
       <Fade duration='2000'>
-      <TempFlex m='10rem 0'>
+      <TempFlex m='10rem 0' p='0rem' sp='2rem'>
+      {(isSmallScreen || isMediumScreen) ? (
+        <TempCenterContainer className='relative'>
+          <TempBackImg
+            className="relative"
+            op="0.5"
+            url={DevImg}
+          >
+          </TempBackImg>
+          <TempLinearText className='absolute top-5'>Software Development</TempLinearText>
+          <TempLinearText className='absolute top-28'>Digital Marketing</TempLinearText>
+          <TempLinearText className='absolute top-56'>UI/UX & Branding</TempLinearText>
+          <TempLinearText className='absolute top-80'>Web3(DAPP) & Blockchain</TempLinearText>
+          <TempLinearText className='absolute bottom-40'>AL/ML Products</TempLinearText>
+          <TempLinearText className='absolute bottom-16'>IOT Development</TempLinearText>
+        </TempCenterContainer>
+      ) : (
         <TempCenterContainer className='relative'>
           <TempBackImg
             className="relative"
@@ -32,6 +52,7 @@ const DevSection = () => {
           <TempLinearText className='absolute top-96 right-36'>AL/ML Products</TempLinearText>
           <TempLinearText className='absolute bottom-20'>IOT Development</TempLinearText>
         </TempCenterContainer>
+      )}
       </TempFlex>
       </Fade>
     </TempSection>

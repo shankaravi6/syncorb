@@ -40,7 +40,7 @@ const WelcomeSection = () => {
                 mp="0rem 1rem"
                 className="flex flex-col justify-center items-center gap-5"
               >
-                <TempSubTitle color={colorTokens.drops[300]} ta="center" fs="clamp(1.5rem, 10vw, 3.5rem)">
+                <TempSubTitle color={colorTokens.drops[300]} ta="center" fs="clamp(2rem, 5vw, 3.5rem)">
                   WELCOME TO OUR COMPANY
                 </TempSubTitle>
                 <TempTypography fs="clamp(.5rem, 5vw, 1.5rem)">

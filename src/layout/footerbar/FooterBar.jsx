@@ -11,7 +11,7 @@ const FooterBar = () => {
   return (
     <TempFooterSection>
       <TempSection mp="10px" sp="10px">
-        <TempFlex w="100%" jc="space-between">
+        <TempFlex w="100%" gap='2rem' jc="space-between">
           <TempFlex sw="100%" w="500px">
             <TempTypography fs="14px" ls="0px">
             At Syncorb, we exceed customer expectations with end-to-end solutions for design, development, and data analytics.

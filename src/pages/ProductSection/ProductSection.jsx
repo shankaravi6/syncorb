@@ -22,15 +22,16 @@ const ProductSection = () => {
   return (
     <TempSection p="5rem 0">
       <Fade>
+      
       <TempFlex>
         <TempSubTitle fs="clamp(2rem, 5vw, 3.5rem)">OUR PRODUCTS</TempSubTitle>
       </TempFlex>
       <TempFlex
         className="flex-wrap"
-        p="4rem 0 5rem 0"
+        p="4rem 0rem 5rem 0rem" sp='4rem 1.5rem 5rem 1.5rem'
         gap="clamp(2rem, 5vw, 5rem)"
       >
-        <TempGrid gap='2rem' columns="repeat(3, 1fr)">
+        <TempGrid gap='2rem' sm_gap='5rem' xs_gap='3rem' columns="repeat(3, 1fr)">
           {productData.map((data) => {
             return (
               <TempGlassCard
