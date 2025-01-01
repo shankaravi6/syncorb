@@ -31,11 +31,11 @@ const DevSection = () => {
           >
           </TempBackImg>
           <TempLinearText className='absolute top-5'>Software Development</TempLinearText>
-          <TempLinearText className='absolute top-28'>Digital Marketing</TempLinearText>
-          <TempLinearText className='absolute top-56'>UI/UX & Branding</TempLinearText>
-          <TempLinearText className='absolute top-80'>Web3(DAPP) & Blockchain</TempLinearText>
-          <TempLinearText className='absolute bottom-40'>AL/ML Products</TempLinearText>
-          <TempLinearText className='absolute bottom-16'>IOT Development</TempLinearText>
+          <TempLinearText className='absolute top-32'>Digital Marketing</TempLinearText>
+          <TempLinearText className='absolute top-60'>UI/UX & Branding</TempLinearText>
+          <TempLinearText className='absolute top-96'>Web3(DAPP) & Blockchain</TempLinearText>
+          <TempLinearText className='absolute bottom-60'>AL/ML Products</TempLinearText>
+          <TempLinearText className='absolute bottom-32'>IOT Development</TempLinearText>
         </TempCenterContainer>
       ) : (
         <TempCenterContainer className='relative'>
