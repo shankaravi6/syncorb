@@ -170,6 +170,7 @@ export const TempCard = TempComponent(styled.div`
   @media screen and (max-width: 960px) {
     width: ${(props) => (props.sw ? props.sw : "auto")};
     height: ${(props) => (props.sh ? props.sh : "auto")};
+    margin: ${(props) => (props.sm ? props.sm : "auto")};
   }
 
   &:hover {

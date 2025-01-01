@@ -86,8 +86,8 @@ const ServciceSection = () => {
             </TempCard>
           </TempBox>
 
-          <TempBox  w="100%" h="500px" sh='800px'>
-            <TempFlex gap="2rem" dir="column" m='3.5rem 0 0 0' sm='0' p='clamp(2rem, 5vw, 0rem)'>
+          <TempBox className="flex justify-center items-center" w="100%" h="500px" sh='800px'>
+            <TempFlex gap="2rem" dir="column" m='3.5rem 0 0 0'>
               <TempBox>
                 <TempFlex al="left" dir="column" gap="clamp(1.5rem, 5vw, 2rem)">
                   <Slider {...settings}>
@@ -99,7 +99,8 @@ const ServciceSection = () => {
                           p="1.5rem"
                           sw='clamp(300px, 90vw, 800px) !important'
                           h="auto"
-                          m="0 0 2rem 0"
+                          m="0 0 2rem 0rem"
+                          sm='0 0 2rem 1rem'
                         >
                           <TempLinearText fs="clamp(0.5rem, 5vw, 1.25rem)" key={sdata?.id}>
                             {sdata?.title}
