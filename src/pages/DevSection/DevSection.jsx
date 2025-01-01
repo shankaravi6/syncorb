@@ -21,7 +21,7 @@ const DevSection = () => {
   return (
     <TempSection p='2rem 0'>
       <Fade duration='2000'>
-      <TempFlex p='0rem' sp='2rem 0 0 0'>
+      <TempFlex p='0rem' sp='2rem'>
       {(isSmallScreen || isMediumScreen) ? (
         <TempCenterContainer className='relative'>
           <TempBackImg
