@@ -20,11 +20,11 @@ import { Fade } from "react-awesome-reveal";
 
 const ProductSection = () => {
   return (
-    <TempSection p="5rem 0">
+    <TempSection p="1rem 0" sp='1rem 0 3rem 0' mp='1rem 0 3rem 0'>
       <Fade>
       
       <TempFlex>
-        <TempSubTitle fs="clamp(2rem, 5vw, 3.5rem)">OUR PRODUCTS</TempSubTitle>
+        <TempSubTitle fs="clamp(2rem, 10vw, 3.5rem)">OUR PRODUCTS</TempSubTitle>
       </TempFlex>
       <TempFlex
         className="flex-wrap"

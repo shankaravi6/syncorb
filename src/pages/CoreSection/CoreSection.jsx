@@ -23,7 +23,7 @@ const CoreSection = () => {
   const { palette } = useThemeContext();
   const { isSmallScreen, isMediumScreen, isLargeScreen } = useResponsiveLayout();
   return (
-    <TempSection>
+    <TempSection p="1rem 0" sp='1rem 0 3rem 0' mp='1rem 0 3rem 0'>
       <Fade duration='2000'>
         <TempFlex
           gap="clamp(5rem, 5vw, 7.5rem)"

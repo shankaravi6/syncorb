@@ -19,9 +19,9 @@ const DevSection = () => {
   const { isSmallScreen, isMediumScreen, isLargeScreen } = useResponsiveLayout();
 
   return (
-    <TempSection>
+    <TempSection p='2rem 0'>
       <Fade duration='2000'>
-      <TempFlex m='10rem 0' p='0rem' sp='2rem'>
+      <TempFlex p='0rem' sp='2rem 0 0 0'>
       {(isSmallScreen || isMediumScreen) ? (
         <TempCenterContainer className='relative'>
           <TempBackImg

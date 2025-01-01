@@ -76,7 +76,7 @@ const ServciceSection = () => {
   };
 
   return (
-    <TempSection p="0 0 5rem 0">
+    <TempSection p="1rem 0 5rem 0" sp='1rem 0 3rem 0' mp='1rem 0 3rem 0'>
       <Fade duration='1500'>
         <TempFlex gap="clamp(0rem, 5vw, 15rem)">
           <TempBox w="auto" className="flex flex-col gap-5" mp='clamp(2rem, 5vw, 0rem)'>
@@ -87,7 +87,7 @@ const ServciceSection = () => {
           </TempBox>
 
           <TempBox  w="100%" h="500px" sh='800px'>
-            <TempFlex gap="2rem" dir="column" m='3.5rem 0 0 0' p='clamp(2rem, 5vw, 0rem)'>
+            <TempFlex gap="2rem" dir="column" m='3.5rem 0 0 0' sm='0' p='clamp(2rem, 5vw, 0rem)'>
               <TempBox>
                 <TempFlex al="left" dir="column" gap="clamp(1.5rem, 5vw, 2rem)">
                   <Slider {...settings}>

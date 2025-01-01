@@ -7,10 +7,10 @@ import { TbApps } from "react-icons/tb";
 
 const WhoWeSection = () => {
   return (
-    <TempSection p="5rem 2rem" sp='5rem 2rem' mp='5rem 2rem'>
+    <TempSection p="2rem 2rem" sp='2rem 2rem' mp='5rem 2rem 0 2rem'>
       <Fade>
       <TempFlex dir='column' gap='0rem'>
-        <TempSubTitle fs='clamp(2rem, 5vw, 5rem)'>WHO WE ARE</TempSubTitle>
+        <TempSubTitle fs='clamp(2rem, 10vw, 3.5rem)'>WHO WE ARE</TempSubTitle>
         <TempLinearText fs='clamp(1.25rem, 5vw, 2rem)' >We always try to understand users expectation</TempLinearText>
       </TempFlex>
       <TempFlex dir='column' gap='2em' p='4rem 0'>
