@@ -53,7 +53,7 @@ const CoreSection = () => {
           
           {(isSmallScreen || isMediumScreen) ? (
           <TempBox w="100%" h="500px">
-            <TempFlex gap="2.5rem">
+            <TempFlex dir='column' gap="2.5rem">
               <TempGrid className='relative' sm_gap='2.5rem' xs_gap='2.5rem'>
                 <TempGlassCard
                   className="flex flex-col justify-center items-center"
