@@ -95,7 +95,7 @@ const ServciceSection = () => {
                       return (
                         <TempCard
                           br="10px"
-                          bg="linear-gradient(175deg, #03040a, #4141417a)"
+                          bg="radial-gradient(circle, rgba(229, 228, 226, 0.085) 0%, rgba(0, 0, 0, 0.28) 100%)"
                           p="1.5rem"
                           sw='clamp(300px, 90vw, 800px) !important'
                           h="auto"
