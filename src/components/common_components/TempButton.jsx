@@ -53,25 +53,43 @@ const StyledButton = TempComponent(styled.button`
 const StyledOutlineButton = TempComponent(styled.button`
   text-align: center;
   letter-spacing: 1.5px;
-  border: 1px solid ${(props) => props.$palette.background.midlow};
-  background: ${(props) => props.$palette.background.high};
-  box-shadow: ${(props) => props.$palette.background.main} 0px;
-  transition: all 0.3s ease;
   font-weight: 400;
+  position: relative;
   padding: ${(props) => (props.p ? props.p : "5px 25px")};
   width: ${(props) => (props.width ? props.width : "max-content")};
-  display: block;
+  display: inline-block;
   border-radius: ${(props) => (props.br ? props.br : "5px")};
+  background: ${(props) =>
+    `linear-gradient(to right, #232323 0%, #ababab 100%)`}; /* Gradient border effect */
+  color: ${(props) => props.$palette.text.midlow};
+  transition: all 0.3s ease;
   opacity: 0.75;
-  position: relative;
-  color: ${(props) => props.$palette.text.midlow};;
+  z-index: 1;
+  cursor: pointer;
+
+  /* Inner content */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    background: ${(props) => props.$palette.background.high}; /* Button background */
+    border-radius: inherit; /* Ensures rounded corners match */
+    z-index: -1;
+  }
 
   &:hover {
     opacity: 0.85;
-    border: 1px solid ${(props) => props.$palette.text.midlow};
+    background: ${(props) =>
+      `linear-gradient(to right, ${(props) =>
+        props.$palette.text.midlow} 0%, ${(props) =>
+        props.$palette.text.main} 100%)`}; /* Hover effect with gradient */
     transition: all 0.3s ease-out;
   }
 `);
+
 
 const TempButton = ({
   height,

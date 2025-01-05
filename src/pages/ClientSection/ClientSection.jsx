@@ -10,11 +10,13 @@ import Logo7 from '../../../public/assets/images/clients/logo_7.png';
 import Logo8 from '../../../public/assets/images/clients/logo_8.png';
 
 import './ClientSection.css'
+import { Fade } from 'react-awesome-reveal';
 
 
 const ClientSection = () => {
   return (
     <TempSection p='2rem 0' sp='1rem 0 3rem 0' mp='1rem 0 3rem 0'>
+    <Fade duration='2000'>
       <TempFlex>
         <TempSubTitle fs='clamp(2rem, 10vw, 3.5rem)'>
             OUR CLIENTS
@@ -46,6 +48,7 @@ const ClientSection = () => {
                 <TempImg src={Logo8} />
             </TempBox>
         </TempFlex>
+        </Fade>
     </TempSection>
   );
 }

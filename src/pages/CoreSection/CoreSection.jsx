@@ -2,6 +2,7 @@ import React from "react";
 import {
   TempBox,
   TempCard,
+  TempCustDiv,
   TempFlex,
   TempGlassCard,
   TempGrid,
@@ -28,7 +29,7 @@ const CoreSection = () => {
         <TempFlex
           gap="clamp(5rem, 5vw, 7.5rem)"
           p='clamp(1rem, 5vw, 3.125rem) clamp(2rem, 6vw, 0rem)'
-          
+          className='relative'
         >
           <TempBox w="100%" className="flex-col gap-5">
             <Fade direction="up">
@@ -276,7 +277,7 @@ const CoreSection = () => {
           </TempBox>
           )}
 
-          
+          <TempCustDiv className='absolute top-20 left-0 w-[250px] h-[250px] rounded-full' style={{background:"linear-gradient(277deg, rgb(126 122 122 / 31%), rgba(0, 0, 0, 0))"}}></TempCustDiv>
         </TempFlex>
       </Fade>
     </TempSection>

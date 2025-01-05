@@ -18,21 +18,21 @@ const WhoWeSection = () => {
         At Syncorb Every Developement is done with the thought to Exceed the Customer Expectations.
         </TempTypography>
         <TempFlex gap='clamp(2rem, 10vw, 5rem)' p='3rem 0'>
-            <TempCard br='0.5rem' className='flex justify-center items-center' w='270px' h='250px' sw='270px' sh='250px' p='2.5rem'>
+            <TempCard bg='radial-gradient(circle, rgb(229 228 226 / 15%) 0%, rgb(0 0 0 / 28%) 100%)' br='0.5rem' className='flex justify-center items-center' w='270px' h='250px' sw='270px' sh='250px' p='2.5rem'>
             <TempFlex dir='column' gap='1rem'>
                 <GrAchievement style={{fontSize:"5rem", color:"#aeadab"}}/>
                 <TempLinearText>2+ Years</TempLinearText>
                 <TempTypography>Experience</TempTypography>
             </TempFlex>
             </TempCard>
-            <TempCard br='0.5rem' className='flex justify-center items-center' w='270px' h='250px' sw='270px' sh='250px' p='2.5rem'>
+            <TempCard bg='radial-gradient(circle, rgb(229 228 226 / 15%) 0%, rgb(0 0 0 / 28%) 100%)' br='0.5rem' className='flex justify-center items-center' w='270px' h='250px' sw='270px' sh='250px' p='2.5rem'>
             <TempFlex dir='column' gap='1rem'>
                 <HiOutlineUserGroup style={{fontSize:"5rem", color:"#aeadab"}}/>
                 <TempLinearText>20+</TempLinearText>
                 <TempTypography>Team Members</TempTypography>
             </TempFlex>
             </TempCard>
-            <TempCard br='0.5rem' className='flex justify-center items-center' w='270px' h='250px' sw='270px' sh='250px' p='2.5rem'>
+            <TempCard bg='radial-gradient(circle, rgb(229 228 226 / 15%) 0%, rgb(0 0 0 / 28%) 100%)' br='0.5rem' className='flex justify-center items-center' w='270px' h='250px' sw='270px' sh='250px' p='2.5rem'>
             <TempFlex dir='column' gap='1rem'>
                 <TbApps style={{fontSize:"5rem", color:"#aeadab"}}/>
                 <TempLinearText>15+</TempLinearText>
