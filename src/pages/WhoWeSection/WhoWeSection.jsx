@@ -1,5 +1,5 @@
 import React from 'react'
-import { TempCard, TempFlex, TempLinearText, TempSection, TempSubTitle, TempTypography } from '../../components/styled_components/globalStyles'
+import { TempCard, TempCustDiv, TempFlex, TempLinearText, TempSection, TempSubTitle, TempTypography } from '../../components/styled_components/globalStyles'
 import { Fade } from 'react-awesome-reveal'
 import { GrAchievement } from "react-icons/gr";
 import { HiOutlineUserGroup } from "react-icons/hi2";
@@ -7,7 +7,14 @@ import { TbApps } from "react-icons/tb";
 
 const WhoWeSection = () => {
   return (
-    <TempSection p="2rem 2rem" sp='2rem 2rem' mp='5rem 2rem 0 2rem'>
+    <TempSection className='relative' p="2rem 2rem" sp='2rem 2rem' mp='5rem 2rem 0 2rem'>
+    <TempCustDiv className="absolute top-0 left-0">
+            <div className="cube">
+              <div className="square"></div>
+              <div className="square2"></div>
+              <div className="square3"></div>
+            </div>
+    </TempCustDiv>
       <Fade>
       <TempFlex dir='column' gap='0rem'>
         <TempSubTitle fs='clamp(2rem, 10vw, 3.5rem)'>WHO WE ARE</TempSubTitle>

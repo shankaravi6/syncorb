@@ -78,7 +78,7 @@ const ServciceSection = () => {
   return (
     <TempSection p="1rem 0 5rem 0" sp='1rem 0 3rem 0' mp='1rem 0 3rem 0'>
       <Fade duration='1500'>
-        <TempFlex gap="clamp(0rem, 5vw, 15rem)">
+        <TempFlex className='relative' gap="clamp(0rem, 5vw, 15rem)">
           <TempBox w="auto" className="flex flex-col gap-5" mp='clamp(2rem, 5vw, 0rem)'>
             <TempSubTitle fs='clamp(2rem, 10vw, 3.5rem)'>OUR SERVICES</TempSubTitle>
             <TempCard br='0.5rem' w="450px" h="450px" p="2rem">
@@ -115,7 +115,15 @@ const ServciceSection = () => {
                 </TempFlex>
               </TempBox>
             </TempFlex>
+           
           </TempBox>
+          <TempCustDiv className="absolute -top-14 right-5">
+            <div className="cube">
+              <div className="square"></div>
+              <div className="square2"></div>
+              <div className="square3"></div>
+            </div>
+          </TempCustDiv>
         </TempFlex>
       </Fade>
     </TempSection>
