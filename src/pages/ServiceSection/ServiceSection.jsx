@@ -94,9 +94,9 @@ const ServciceSection = () => {
             className="flex flex-col gap-5"
             mp="clamp(2rem, 5vw, 0rem)"
           >
-            <TempLinearText fs="clamp(2rem, 10vw, 3rem)">
+            <TempSubTitle ta='left' fs="clamp(2rem, 10vw, 2.8rem)">
               SERVICE WE PROVIDE
-            </TempLinearText>
+            </TempSubTitle>
             <TempTypography>
               We are redefining the way the world communicated.
             </TempTypography>
