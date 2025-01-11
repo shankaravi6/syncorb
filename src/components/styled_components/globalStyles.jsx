@@ -306,18 +306,51 @@ export const TempSubTitle = TempComponent(styled.h1`
   font-size: ${(props) => (props.fs ? props.fs : "clamp(1rem, 5vw, 2.5rem)")};
   text-align: ${(props) => (props.ta ? props.ta : "center")};
   letter-spacing: ${(props) => (props.ls ? props.ls : "0px")};
-  color: ${(props) => (props.color ? props.color : props.$palette.text.mid)};
+  color: ${(props) => (props.color ? props.color : "transparent")};
   text-shadow: ${(props) => (props.ts ? props.ts : "unset")};
   font-weight: ${(props) => (props.fw ? props.fw : "unset")};
   text-transform: ${(props) => (props.tt ? props.tt : "unset")};
   transition: all 0.3s ease;
-  opacity: 1;
+
+  background: linear-gradient(
+    135deg,
+    #dedede,
+    #ffffff 16%,
+    #dedede 21%,
+    #ffffff 24%,
+    #454545 27%,
+    #dedede 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedede 72%,
+    #ffffff 80%,
+    #dedede 84%,
+    #a1a1a1
+  );
+  background-size: 250%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.85;
+
+  animation: platinumShine 3s infinite linear;
 
   &:hover {
     opacity: 1;
     transition: all 0.3s ease;
   }
+
+  @keyframes platinumShine {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: bottom right;
+    }
+  }
 `);
+
+
 
 export const TempNavText = TempComponent(styled.p`
   font-family: "Typo", sans-serif;
