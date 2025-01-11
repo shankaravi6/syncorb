@@ -78,19 +78,12 @@
   opacity: 0.3;
 }
 
+.splide__arrow--prev {
+  display: none !important; /* Hide the left (prev) arrow */
+}
 
-.glow-down {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.7;
-  width: 100%;
-  height: 50px;
-  display: block;
-  filter: blur(1em);
-  transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
-  background: #fff;
-  pointer-events: none;
+.splide__arrow--next {
+  display: block; /* Ensure the right (next) arrow is visible */
+  position: absolute !important;
+  right: -4rem !important; /* Adjust position if needed */
 }

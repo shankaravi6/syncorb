@@ -1,4 +1,4 @@
-import React from "react";
+import React, {memo} from "react";
 import {
   TempBackBanImg,
   TempBackImg,
@@ -19,7 +19,7 @@ const DevSection = () => {
   const { isSmallScreen, isMediumScreen, isLargeScreen } = useResponsiveLayout();
 
   return (
-    <TempSection p='2rem 0'>
+    <TempSection p='2.5rem 0'>
       <Fade duration='2000'>
       <TempFlex p='0rem' sp='1.5rem'>
       {(isSmallScreen || isMediumScreen) ? (
@@ -59,4 +59,4 @@ const DevSection = () => {
   );
 };
 
-export default DevSection;
+export default memo(DevSection);

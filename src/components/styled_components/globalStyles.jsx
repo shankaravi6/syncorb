@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { connect } from "react-redux";
 import React from "react";
 import { useThemeContext } from "../../context/theme/ThemeProvider";
@@ -6,6 +6,21 @@ import { useThemeContext } from "../../context/theme/ThemeProvider";
 const mapStateToProps = (state) => ({
   mode: state.app.mode,
 });
+
+const rotate = keyframes`
+  100% {
+    transform: rotate(1turn);
+  }
+`;
+
+const opacityChange = keyframes`
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
 
 //HOC
 const TempComponent = (StyledComponent) => {
@@ -28,10 +43,10 @@ export const TempBackground = styled.div`
 
 export const TempContainer = TempComponent(styled.div`
   width: 100%;
-  background: ${(props) => props.back ? props.back : 'unset'};
+  background: ${(props) => (props.back ? props.back : "unset")};
   background-color: ${(props) =>
     props.bg ? props.bg : props.$palette.background.high};
-  color:#f2f2f2;
+  color: #f2f2f2;
   @media screen and (max-width: 768px) {
     max-width: 1300px;
   }
@@ -152,6 +167,7 @@ export const TempBox = styled.div`
   }
   @media screen and (max-width: 1125px) {
     width: ${(props) => (props.mw ? props.mw : "none")};
+    height: ${(props) => (props.mh ? props.mh : "auto")};
     padding: ${(props) => (props.mp ? props.mp : "unset")};
   }
 `;
@@ -204,6 +220,35 @@ export const TempGlassCard = TempComponent(styled.div`
     backdrop-filter: blur(5px);
     background: ${(props) =>
       props.bg ? props.bg : `rgba(255, 255, 255, 0.085)`};
+  }
+`);
+
+export const TempCoreCard = TempComponent(styled.div`
+  width: ${(props) => (props.w ? props.w : "350px")};
+  height: ${(props) => (props.h ? props.h : "350px")};
+  padding: ${(props) => (props.p ? props.p : "auto")};
+  margin: ${(props) => (props.m ? props.m : "auto")};
+  border-radius: ${(props) => (props.br ? props.br : "0.5rem")};
+  background: ${(props) =>
+    props.bg ? props.bg : `rgba(255, 255, 255, 0.075)`};
+  box-shadow: ${(props) =>
+    props.bs ? props.bs : `0 4px 30px rgba(0, 0, 0, 0.1)`};
+  border: 1px solid
+    ${(props) => (props.b ? props.b : "rgba(255, 255, 255, 0.3)")};
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(rgb(0 0 0 / 90%), rgb(0 0 0 / 84%)) padding-box, linear-gradient(to right, #00000069, #ffffffc7) border-box;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  @media screen and (max-width: 960px) {
+    width: ${(props) => (props.sw ? props.sw : "auto")};
+    height: ${(props) => (props.sh ? props.sh : "auto")};
+  }
+
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(5px);
+    background:linear-gradient(rgb(0 0 0 / 90%), rgb(0 0 0 / 75%)) padding-box, linear-gradient(to right, #00000069, #ffffffc7) border-box;
   }
 `);
 
@@ -350,8 +395,6 @@ export const TempSubTitle = TempComponent(styled.h1`
   }
 `);
 
-
-
 export const TempNavText = TempComponent(styled.p`
   font-family: "Typo", sans-serif;
   font-size: ${(props) => (props.fs ? props.fs : "clamp(1rem, 5vw, 1rem)")};
@@ -431,3 +474,51 @@ export const TempSpan = TempComponent(styled.span`
 export const TempCustDiv = TempComponent(styled.div`
   display: block;
 `);
+
+export const Conic = styled.div`
+  position: relative;
+  z-index: 0;
+  width: 400px;
+  height: 300px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #1a232a;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: conic-gradient(
+      transparent,
+      rgba(168, 239, 255, 1),
+      transparent 30%
+    );
+    animation: ${rotate} 4s linear infinite;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: #000;
+    border-radius: 5px;
+  }
+`;
+
+export const ConicDemo = styled(Conic)`
+  &::after {
+    animation: ${opacityChange} 5s infinite linear;
+  }
+`;

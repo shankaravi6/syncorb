@@ -6,6 +6,7 @@ import {
   TempCard,
   TempCustDiv,
   TempFlex,
+  TempGlassCard,
   TempImg,
   TempLinearText,
   TempSection,
@@ -19,20 +20,24 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaRegArrowAltCircleUp, FaRegArrowAltCircleDown } from "react-icons/fa";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/dist/css/splide.min.css";
+import { FaRobot } from "react-icons/fa";
+import { colorTokens } from "../../context/theme/themeConfig";
 
 // Custom Arrow Components with Icons
 const TopArrow = (props) => (
   <div
     className="slick-arrow top-arrow"
     style={{
-      position: 'absolute',
-      top: '-50px', // Adjusted to move it a little lower
-      left: '50%',
-      transform: 'translateX(-50%)',
+      position: "absolute",
+      top: "-50px", // Adjusted to move it a little lower
+      left: "50%",
+      transform: "translateX(-50%)",
       zIndex: 10,
-      cursor: 'pointer',
-      fontSize: '30px',
-      color: '#aeadab',
+      cursor: "pointer",
+      fontSize: "30px",
+      color: "#aeadab",
     }}
     onClick={props.onClick}
   >
@@ -44,14 +49,14 @@ const BottomArrow = (props) => (
   <div
     className="slick-arrow bottom-arrow"
     style={{
-      position: 'absolute',
-      bottom: '-30px', // Adjusted to move it a little higher
-      left: '50%',
-      transform: 'translateX(-50%)',
+      position: "absolute",
+      bottom: "-30px", // Adjusted to move it a little higher
+      left: "50%",
+      transform: "translateX(-50%)",
       zIndex: 10,
-      cursor: 'pointer',
-      fontSize: '30px',
-      color: '#aeadab',
+      cursor: "pointer",
+      fontSize: "30px",
+      color: "#aeadab",
     }}
     onClick={props.onClick}
   >
@@ -76,48 +81,131 @@ const ServciceSection = () => {
   };
 
   return (
-    <TempSection p="1rem 0 5rem 0" sp='1rem 0 3rem 0' mp='1rem 0 3rem 0'>
-      <Fade duration='1500'>
-        <TempFlex className='relative' gap="clamp(0rem, 5vw, 15rem)">
-          <TempBox w="auto" className="flex flex-col gap-5" mp='clamp(2rem, 5vw, 0rem)'>
-            <TempSubTitle fs='clamp(2rem, 10vw, 3.5rem)'>OUR SERVICES</TempSubTitle>
-            <TempCard br='0.5rem' w="450px" h="450px" p="2rem">
-              <TempImg src={ServiceImg} br="0.25rem" />
-            </TempCard>
+    <TempSection
+      p="5rem 0 4rem 0"
+      sp="1rem 0 3rem 0"
+      mp="1rem 0 3rem 0"
+      className="relative"
+    >
+      <Fade duration="1500">
+        <TempFlex className="relative" gap="clamp(0rem, 5vw, 15rem)">
+          <TempBox
+            w="500px"
+            className="flex flex-col gap-5"
+            mp="clamp(2rem, 5vw, 0rem)"
+          >
+            <TempLinearText fs="clamp(2rem, 10vw, 3rem)">
+              SERVICE WE PROVIDE
+            </TempLinearText>
+            <TempTypography>
+              We are redefining the way the world communicated.
+            </TempTypography>
           </TempBox>
 
-          <TempBox className="flex justify-center items-center" w="100%" h="500px" sh='800px'>
-            <TempFlex gap="2rem" dir="column" m='3.5rem 0 0 0'>
-              <TempBox>
-                <TempFlex al="left" dir="column" gap="clamp(1.5rem, 5vw, 2rem)">
-                  <Slider {...settings}>
-                    {serviceData.map((sdata) => {
-                      return (
-                        <TempCard
-                          br="10px"
-                          bg="radial-gradient(circle, rgba(229, 228, 226, 0.085) 0%, rgba(0, 0, 0, 0.28) 100%)"
-                          p="1.5rem"
-                          sw='clamp(300px, 90vw, 800px) !important'
-                          h="auto"
-                          m="0 0 2rem 0rem"
-                          sm='0 0 2rem 1rem'
+          <TempBox
+            className="flex justify-center items-center"
+            w="1500px"
+            h="500px"
+            sh="800px"
+            mh='350px'
+          >
+            <TempFlex
+              m="-5rem 0 0 0"
+              al="left"
+              dir="column"
+              gap="clamp(1.5rem, 5vw, 2rem)"
+            >
+              <Splide
+                options={{
+                  perPage: 3,
+                  perMove: 1,
+                  drag: "free",
+                  type: "loop",
+                  omitEnd: true,
+                  snap: true,
+                  pagination: false,
+                  gap: "10rem",
+                  width: "850px",
+                  arrows: true,
+                  autoplay: true,
+                  interval: 2000,
+                  breakpoints: {
+                    1024: {
+                      perPage: 2, // Shows 2 items per page on medium screens
+                      gap: "5rem", // Adjusts gap between items
+                      width: "750px",
+                      arrows: false,
+                    },
+                    768: {
+                      perPage: 1, // Shows 1 item per page on smaller screens
+                      gap: "2rem", // Adjusts gap for small screens
+                      width: "350px",
+                      arrows: false,
+                    },
+                    480: {
+                      perPage: 1, // Shows 1 item per page on very small screens
+                      gap: "1rem", // Smaller gap on very small screens
+                      width: "250px",
+                      arrows: false,
+                    },
+                  },
+                }}
+                aria-label="My React Splide Slider"
+                style={{ overflowX: 'auto' }} 
+              >
+                {serviceData.map((data) => {
+                  return (
+                    <SplideSlide>
+                      <TempGlassCard w="275px" h="275px" sw="250px" sh="250px" p="1rem 1.5rem">
+                        <TempFlex
+                          dir="column"
+                          gap="1.5rem"
+                          al="start"
+                          jc="center"
                         >
-                          <TempLinearText fs="clamp(0.5rem, 5vw, 1.25rem)" key={sdata?.id}>
-                            {sdata?.title}
-                            <TempTypography fs="clamp(0.5rem, 5vw, 1.25rem)">
-                              {sdata?.text}
+                          {data.icon && (
+                            <data.icon
+                              style={{
+                                color: colorTokens.drops[300],
+                                fontSize: "2.5rem",
+                                margin: "0.5rem 0 0 0",
+                              }}
+                            />
+                          )}
+                          <TempFlex
+                            p="0.5rem 0 0 0"
+                            dir="column"
+                            gap=".5rem"
+                            al="start"
+                          >
+                            <TempLinearText
+                              ta="left"
+                              fs="clamp(1rem, 10vw, 1.25rem)"
+                            >
+                              {data.title}
+                            </TempLinearText>
+                            <TempTypography
+                              ta="left"
+                              fs="clamp(1rem, 10vw, 1.rem)"
+                            >
+                              {data.text}
                             </TempTypography>
-                          </TempLinearText>
-                        </TempCard>
-                      );
-                    })}
-                  </Slider>
-                </TempFlex>
-              </TempBox>
+                          </TempFlex>
+                        </TempFlex>
+                      </TempGlassCard>
+                    </SplideSlide>
+                  );
+                })}
+              </Splide>
             </TempFlex>
-           
+            <TempCustDiv className="absolute top-24 right-28">
+              <div className="glowbox">
+                <div className="glow"></div>
+              </div>
+            </TempCustDiv>
           </TempBox>
-          <TempCustDiv className="absolute -top-14 right-5">
+
+          <TempCustDiv className="absolute -top-10 left-0">
             <div className="cube">
               <div className="square"></div>
               <div className="square2"></div>

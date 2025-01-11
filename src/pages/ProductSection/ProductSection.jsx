@@ -20,7 +20,7 @@ import { Fade } from "react-awesome-reveal";
 
 const ProductSection = () => {
   return (
-    <TempSection p="1rem 0" sp='1rem 0 3rem 0' mp='1rem 0 3rem 0'>
+    <TempSection p="2.5rem 0" sp='1rem 0 3rem 0' mp='1rem 0 3rem 0'>
       <Fade>
       
       <TempFlex>

@@ -1,7 +1,8 @@
-import React from "react";
+import React, {memo} from "react";
 import {
   TempBox,
   TempCard,
+  TempCoreCard,
   TempCustDiv,
   TempFlex,
   TempGlassCard,
@@ -25,7 +26,7 @@ const CoreSection = () => {
   const { isSmallScreen, isMediumScreen, isLargeScreen } =
     useResponsiveLayout();
   return (
-    <TempSection p="1rem 0" sp="1rem 0 3rem 0" mp="1rem 0 3rem 0">
+    <TempSection p="2.5rem 0" sp="1rem 0 3rem 0" mp="1rem 0 3rem 0">
       <Fade duration="2000">
         <TempFlex
           gap="clamp(5rem, 5vw, 7.5rem)"
@@ -172,9 +173,9 @@ const CoreSection = () => {
             </TempBox>
           ) : (
             <TempBox w="100%" h="500px">
-              <TempFlex gap=".5rem">
+              <TempFlex gap="1rem">
                 <TempGrid className="relative">
-                  <TempGlassCard
+                  <TempCoreCard
                     className="flex flex-col justify-center items-center absolute -top-60"
                     w="235px"
                     h="235px"
@@ -198,8 +199,8 @@ const CoreSection = () => {
                         Continuously reimagining solutions.
                       </TempTypography>
                     </TempFlex>
-                  </TempGlassCard>
-                  <TempGlassCard
+                  </TempCoreCard>
+                  <TempCoreCard
                     className="flex flex-col justify-center items-center absolute  top-8 left-10"
                     w="235px"
                     h="235px"
@@ -223,10 +224,10 @@ const CoreSection = () => {
                         Ensuring trustworthy outcomes.
                       </TempTypography>
                     </TempFlex>
-                  </TempGlassCard>
+                  </TempCoreCard>
                 </TempGrid>
                 <TempGrid className="relative">
-                  <TempGlassCard
+                  <TempCoreCard
                     className="flex flex-col justify-center items-center absolute  -top-72 left-72"
                     w="235px"
                     h="235px"
@@ -250,8 +251,8 @@ const CoreSection = () => {
                         Protecting data and systems at all levels.
                       </TempTypography>
                     </TempFlex>
-                  </TempGlassCard>
-                  <TempGlassCard
+                  </TempCoreCard>
+                  <TempCoreCard
                     className="flex flex-col justify-center items-center absolute  -top-2 left-80"
                     w="235px"
                     h="235px"
@@ -277,7 +278,7 @@ const CoreSection = () => {
                         Tailoring services to client needs.
                       </TempTypography>
                     </TempFlex>
-                  </TempGlassCard>
+                  </TempCoreCard>
                 </TempGrid>
               </TempFlex>
             </TempBox>
@@ -296,4 +297,4 @@ const CoreSection = () => {
   );
 };
 
-export default CoreSection;
+export default memo(CoreSection);

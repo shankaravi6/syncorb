@@ -1,4 +1,4 @@
-import React from "react";
+import React, {memo} from "react";
 import {
   TempCard,
   TempCustDiv,
@@ -17,7 +17,7 @@ const WhoWeSection = () => {
   return (
     <TempSection
       className="relative"
-      p="2rem 2rem"
+      p="2.5rem"
       sp="2rem 2rem"
       mp="5rem 2rem 0 2rem"
     >
@@ -116,4 +116,4 @@ const WhoWeSection = () => {
   );
 };
 
-export default WhoWeSection;
+export default memo(WhoWeSection);
