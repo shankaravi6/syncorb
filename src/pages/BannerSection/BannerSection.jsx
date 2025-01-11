@@ -22,12 +22,12 @@ const BannerSection = () => {
   return (
     <TempSection m="unset" mw="unset">
       <TempCenterContainer>
-      <Spline scene="https://prod.spline.design/T9z4vGuSynO1F3Ea/scene.splinecode" />
-        {/* <TempBackBanImg
+      {/* <Spline scene="https://prod.spline.design/T9z4vGuSynO1F3Ea/scene.splinecode" /> */}
+        <TempBackBanImg
           className="relative"
           op="0.4"
           url={BannerImg}
-        ></TempBackBanImg> */}
+        ></TempBackBanImg>
         <TempFlex className="absolute" dir="column">
           <Fade direction="up" triggerOnce>
             <TempBox w="350px" h="350px" sw='250px' sh='250px'>

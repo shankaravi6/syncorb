@@ -151,7 +151,6 @@ const ServciceSection = () => {
                   },
                 }}
                 aria-label="My React Splide Slider"
-                style={{ overflowX: 'auto' }} 
               >
                 {serviceData.map((data) => {
                   return (
