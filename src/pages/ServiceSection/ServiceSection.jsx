@@ -1,4 +1,4 @@
-import React, { useEffect, memo } from "react";
+import React, { useEffect, memo, useState } from "react";
 import Lenis from "@studio-freight/lenis";
 import { Fade } from "react-awesome-reveal";
 import {
@@ -80,6 +80,12 @@ const ServciceSection = () => {
     nextArrow: <BottomArrow />,
   };
 
+  const [activeIndex, setActiveIndex] = useState();
+
+  const handleSlideMove = (splide) => {
+    setActiveIndex(splide.index);
+  };
+
   return (
     <TempSection
       p="5rem 0 4rem 0"
@@ -94,7 +100,7 @@ const ServciceSection = () => {
             className="flex flex-col gap-5"
             mp="clamp(2rem, 5vw, 0rem)"
           >
-            <TempSubTitle ta='left' fs="clamp(2rem, 10vw, 2.8rem)">
+            <TempSubTitle ta="left" fs="clamp(2rem, 10vw, 2.8rem)">
               SERVICE WE PROVIDE
             </TempSubTitle>
             <TempTypography>
@@ -107,7 +113,7 @@ const ServciceSection = () => {
             w="1500px"
             h="500px"
             sh="800px"
-            mh='350px'
+            mh="350px"
           >
             <TempFlex
               m="-5rem 0 0 0"
@@ -128,22 +134,25 @@ const ServciceSection = () => {
                   width: "850px",
                   arrows: true,
                   autoplay: true,
-                  interval: 2000,
+                  interval: 5000,
                   breakpoints: {
                     1024: {
                       perPage: 2, // Shows 2 items per page on medium screens
+                      perMove: 1,
                       gap: "5rem", // Adjusts gap between items
                       width: "750px",
                       arrows: false,
                     },
                     768: {
                       perPage: 1, // Shows 1 item per page on smaller screens
+                      perMove: 1,
                       gap: "2rem", // Adjusts gap for small screens
                       width: "350px",
                       arrows: false,
                     },
                     480: {
                       perPage: 1, // Shows 1 item per page on very small screens
+                      perMove: 1,
                       gap: "1rem", // Smaller gap on very small screens
                       width: "250px",
                       arrows: false,
@@ -151,11 +160,21 @@ const ServciceSection = () => {
                   },
                 }}
                 aria-label="My React Splide Slider"
+                onMove={handleSlideMove}
               >
-                {serviceData.map((data) => {
+                {serviceData.map((data, index) => {
+                  const isActive = index === activeIndex;
                   return (
-                    <SplideSlide>
-                      <TempGlassCard w="275px" h="275px" sw="250px" sh="250px" p="1rem 1.5rem">
+                    <SplideSlide key={data.id}>
+                      <TempGlassCard
+                        w="275px"
+                        h="275px"
+                        sw="250px"
+                        sh="250px"
+                        b="unset"
+                        bg={isActive ? undefined : "unset"}
+                        p="1rem 1.5rem"
+                      >
                         <TempFlex
                           dir="column"
                           gap="1.5rem"
