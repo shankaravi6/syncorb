@@ -17,7 +17,7 @@ const WhoWeSection = () => {
   return (
     <TempSection
       className="relative"
-      p="2.5rem"
+      p="3.5rem 0 2.5rem 0"
       sp="2rem 2rem"
       mp="5rem 2rem 0 2rem"
     >
@@ -41,6 +41,7 @@ const WhoWeSection = () => {
             Customer Expectations.
           </TempTypography>
           <TempFlex gap="clamp(2rem, 10vw, 5rem)" p="3rem 0">
+          <Fade>
             <TempCard
               bg="conic-gradient(
     from 0deg,
@@ -63,6 +64,8 @@ const WhoWeSection = () => {
                 <TempTypography>Experience</TempTypography>
               </TempFlex>
             </TempCard>
+            </Fade>
+            <Fade>
             <TempCard
               bg="conic-gradient(
     from 0deg,
@@ -87,6 +90,8 @@ const WhoWeSection = () => {
                 <TempTypography>Team Members</TempTypography>
               </TempFlex>
             </TempCard>
+            </Fade>
+            <Fade>
             <TempCard
               bg="conic-gradient(
     from 0deg,
@@ -109,6 +114,7 @@ const WhoWeSection = () => {
                 <TempTypography>Projects</TempTypography>
               </TempFlex>
             </TempCard>
+            </Fade>
           </TempFlex>
         </TempFlex>
       </Fade>
