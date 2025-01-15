@@ -12,6 +12,7 @@ import { Fade } from "react-awesome-reveal";
 import { GrAchievement } from "react-icons/gr";
 import { HiOutlineUserGroup } from "react-icons/hi2";
 import { TbApps } from "react-icons/tb";
+import { colorTokens } from "../../context/theme/themeConfig";
 
 const WhoWeSection = () => {
   return (
@@ -36,10 +37,12 @@ const WhoWeSection = () => {
           </TempLinearText>
         </TempFlex>
         <TempFlex dir="column" gap="2em" p="4rem 0">
-          <TempTypography>
+          <marquee direction="left" scrollamount="25">
+          <TempTypography fs="clamp(2rem, 5vw, 3.5rem)" color={colorTokens.drops[0]} fw='bolder'>
             At Syncorb Every Developement is done with the thought to Exceed the
             Customer Expectations.
           </TempTypography>
+          </marquee>
           <TempFlex gap="clamp(2rem, 10vw, 5rem)" p="3rem 0">
           <Fade>
             <TempCard

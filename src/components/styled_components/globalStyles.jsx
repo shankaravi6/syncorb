@@ -339,7 +339,7 @@ export const TempBanTitle = TempComponent(styled.h1`
 export const TempTitle = TempComponent(styled.h1`
   font-family: "Primary", sans-serif;
   font-size: ${(props) => (props.fs ? props.fs : "clamp(1.5rem, 10vw, 5rem)")};
-  text-align: center;
+  text-align: ${(props) => (props.ta ? props.ta : "center")};
   letter-spacing: ${(props) => (props.ls ? props.ls : "unset")};
   color: ${(props) => (props.color ? props.color : props.$palette.text.high)};
   text-transform: ${(props) => (props.tt ? props.tt : "unset")};
