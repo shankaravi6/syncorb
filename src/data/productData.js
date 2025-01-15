@@ -4,7 +4,7 @@ export const productData = [
         id: 1,
         description:'A personalized AI platform that helps users save smarter, invest wiser, and achieve financial goals with tailored solutions.',
         title:'EKONOMI',
-        img: '../../public/assets/images/prod1.jpg',
+        img: 'assets/images/prod1.jpg',
         features: [
             {
                 id: 1,
@@ -24,7 +24,7 @@ export const productData = [
         id: 2,
         description:'A comprehensive location-based business recommendation system powered by clustering and machine learning algorithms.',
         title:'BIZOP',
-        img: '../../public/assets/images/prod2.png',
+        img: 'assets/images/prod2.png',
         features: [
             {
                 id: 1,
@@ -44,7 +44,7 @@ export const productData = [
         id: 3,
         description:'Revolutionizing the appliance industry by integrating AI and IoT for enhanced sustainability and energy efficiency.',
         title:'THETA',
-        img: '../../public/assets/images/prod3.png',
+        img: 'assets/images/prod3.png',
         features: [
             {
                 id: 1,
@@ -64,7 +64,7 @@ export const productData = [
         id: 4,
         description:'An advanced healthcare AI application product aimed at modernizing the healthcare sector with innovative AI features.',
         title:'MEDZEN',
-        img: '../../public/assets/images/prod4.png',
+        img: 'assets/images/prod4.png',
         features: [
             {
                 id: 1,
