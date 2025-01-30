@@ -172,7 +172,8 @@ const ServciceSection = () => {
                         sw="250px"
                         sh="250px"
                         b="unset"
-                        bg={isActive ? 'rgba(255, 255, 255, 0.15)' : "unset"}
+                        //bg={isActive ? 'rgba(255, 255, 255, 0.15)' : "unset"}
+                        bg='rgba(255, 255, 255, 0.15)'
                         p="1rem 1.5rem"
                       >
                         <TempFlex

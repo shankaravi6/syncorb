@@ -37,12 +37,10 @@ const WhoWeSection = () => {
           </TempLinearText>
         </TempFlex>
         <TempFlex dir="column" gap="2em" p="4rem 0">
-          <marquee direction="left" scrollamount="25">
-          <TempTypography fs="clamp(2rem, 5vw, 3.5rem)" color={colorTokens.drops[0]} fw='bolder'>
+          <TempTypography fs="clamp(2rem, 5vw, 2.5rem)" ta='center' color={colorTokens.drops[0]} fw='bolder'>
             At Syncorb Every Developement is done with the thought to Exceed the
             Customer Expectations.
           </TempTypography>
-          </marquee>
           <TempFlex gap="clamp(2rem, 10vw, 5rem)" p="3rem 0">
           <Fade>
             <TempCard
